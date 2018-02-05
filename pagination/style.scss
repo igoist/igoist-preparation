@@ -6,7 +6,7 @@ $theme-stroke-7: #e5e5e5;
 $theme-primary-2: #38f;
 $theme-primary-4: #f74;
 
-.zent-pagination {
+.pagination {
   font-size: 12px;
   line-height: 16px;
   text-align: right;
@@ -84,10 +84,10 @@ $theme-primary-4: #f74;
   }
 }
 
-.zent-pagination__info {
+.pagination__info {
   display: inline-block;
 
-  .zent-select {
+  .select {
     width: 60px;
   }
 }
