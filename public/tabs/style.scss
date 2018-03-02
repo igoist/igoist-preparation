@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrap {
+  position: relative;
+  margin: 0 auto;
+  top: 200px;
+  width: 80%;
+  height: 100px;
+  border: 1px solid #333;
+}
+
+.tab-nav {
+  display: inline-block;
+  position: relative;
+  .tab {
+    position: relative;
+    display: inline-block;
+    width: 84px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 0px;
+      height: 3px;
+      left: 50%;
+      bottom: 0px;
+      background: #2077ff;
+      transition: all .4s cubic-bezier(.23,1,.32,1);
+    }
+    &.active, &:hover {
+      &:before {
+        width: 84px;
+        left: 0;
+      }
+    }
+  }
+}
